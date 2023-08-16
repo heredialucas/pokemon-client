@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  margin: 100px 50% 100px 50% ;
+  width: 300px;
+  .CircleLoading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 rgb(73, 218, 37);
+    background: transparent;
+    animation: Animate 1s linear infinite;
+  }
+
+  .TextLoading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: rgb(155, 184, 116);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 150px;
+    font-size: 2em;
+    background: transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes Animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

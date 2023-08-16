@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6c6d6c57, #99ce30de);
+    border-bottom-right-radius: 150px;
+
+    h1{
+        margin-left: 250px;
+        color: transparent;
+        letter-spacing: 3px;
+        background: linear-gradient(
+            to left,
+            rgb(255, 255, 255) 50%,
+            rgba(175, 30, 33, 0.974) 50%
+          );        background-clip: text;
+        -webkit-background-clip: text;
+
+    }
+    .navlink{
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .navlink:hover{
+        color: rgb(0, 0, 0);
+        background: #fff;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+}

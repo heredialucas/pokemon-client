@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   .containerBtn{
+       display: flex;
+       button{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin: 15px 0 15px 150px;
+           width: 80px;
+           height: 30px;
+           border-radius: 15px;
+           font-weight: 700;
+           font-size: 15px;
+           background: transparent;
+           border: none;
+           color: #fff;
+       }
+       button:hover{
+           cursor: pointer;
+           transition: .3s;
+           opacity: .8;
+       }
+       button:nth-child(1n){
+        background: linear-gradient(to bottom, #70da33de, #31518c);
+      
+      }
+      button:nth-child(2n){
+        background: linear-gradient(to bottom, #db5415de, #353735);
+      
+      }
+   }
+}

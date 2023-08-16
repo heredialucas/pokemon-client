@@ -1,0 +1,124 @@
+.container {
+  background: linear-gradient(
+    to bottom,
+    rgb(204, 202, 202),
+    rgb(155, 184, 116),
+    rgb(75, 135, 191),
+    rgb(196, 104, 52)
+  );
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .containerForm {
+    width: 1000px;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      margin-top: 30px;
+      padding: 15px;
+      box-shadow: 0 0 3px 1px #fff;
+      .containerInput {
+        display: flex;
+        justify-content: space-around;
+
+        p{
+          color: rgb(232, 36, 36);
+          font-size: 13px;
+          margin: 0;
+          padding: 0;
+        }
+        .containerInputLeft {
+          margin: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          color: rgb(0, 0, 0);
+          input {
+            width: 150px;
+            margin: 0;
+          }
+        }
+        .containerInputRight {
+          color: rgb(0, 0, 0);
+          margin: 15px;
+          display: flex;
+          flex-direction: column;
+          input {
+            margin: 0;
+            width: 150px;
+          }
+        }
+      }
+      .containerBtn {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        label {
+          padding-right: 25px;
+        }
+        input {
+          font-weight: 700;
+          width: 80px;
+          margin: 5px;
+          border-radius: 15px;
+          background: transparent;
+          color: rgb(255, 255, 255);
+          border: 2px solid #fff;
+        }
+        input:hover {
+          color: rgb(0, 0, 0);
+          background: #fff;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+      }
+      .containerBtnDown {
+        margin: 15px;
+        display: flex;
+        justify-content: space-around;
+
+        input {
+          font-size: 15px;
+          color: #fff;
+          background: transparent;
+          margin: 15px;
+          border: 2px solid #fff;
+          padding: 5px;
+          border-radius: 20px;
+          font-weight: 700;
+        }
+        input:hover {
+          color: rgb(0, 0, 0);
+          background: #fff;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        .navlink {
+          font-size: 15px;
+          font-weight: 500;
+          color: #fff;
+          background: transparent;
+          margin: 15px;
+          border: 2px solid #fff;
+          padding: 5px;
+          border-radius: 20px;
+        }
+        .navlink:hover {
+          color: rgb(0, 0, 0);
+          background: #fff;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

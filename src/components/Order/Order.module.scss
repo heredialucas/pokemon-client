@@ -1,0 +1,22 @@
+.containerBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button {
+      font-weight: 700;
+      width: 70px;
+      margin: 2px 1px;
+      border-radius: 15px;
+      background: transparent;
+      color: rgb(255, 255, 255);
+      border: 2px solid #fff;
+    }
+    button:hover{
+        color: rgb(0, 0, 0);
+        background: #fff;
+        cursor: pointer;
+        transition:.3s;
+    }
+    
+  }

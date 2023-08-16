@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 150px;
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 10px 0 rgba(140, 139, 139, 0.515),
+      inset 0 -10px 0 rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      position: relative;
+      width: 80px;
+      height: 60px;
+      background: #fff;
+      padding: 10px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 5px 0 rgb(0, 0, 0, 0.1),
+        inset 0 -5px 0 rgba(121, 121, 121, 0.25);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      position: relative;
+      width: 80px;
+      height: 60px;
+      z-index: 10000;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: #fff;
+        letter-spacing: 3px;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: #fff;
+        }
+        li {
+          margin: 5px;
+          color: #fff;
+        }
+        li:hover {
+          transition: 0.2s;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 3px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    background: linear-gradient(
+      0deg,
+      rgb(232, 230, 230) 50%,
+      rgba(175, 30, 33, 0.974) 50%
+    );
+    box-shadow: 0 0 5px 2px black, 0 0px 5px 1px rgb(0, 0, 0);
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    z-index: 100;
+    text-shadow: 0 0 5px 5px black;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    
+
+    span {
+      position: relative;
+      background-color: black;
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0px 0 3px 0px rgb(0, 0, 0);
+      z-index: 100;
+    }
+  }
+}
+.btn:hover{
+    cursor: pointer;
+    transform: rotate(-360deg);
+    transition: .5s;
+}
+
+.card:nth-child(1n) {
+  background: linear-gradient(to bottom, #70da33de, #31518c);
+}
+.card:nth-child(1n):hover {
+  transition: 1s;
+  background: linear-gradient(to bottom, #e6d81bde, #e82626);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -190px;
+  left: -40px;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.152));
+  transform: rotate(45deg);
+  filter: blur(5px);
+}
+
+.img::before {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-right-radius: 50px;
+  box-shadow: 15px -15px 0 15px #fff;
+}
+.img::after {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-left-radius: 50px;
+  box-shadow: -15px -15px 0 15px #fff;
+}
+

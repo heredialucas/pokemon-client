@@ -1,0 +1,54 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  background: linear-gradient(to bottom, #6c6d6c57, #da2a2ade);
+
+  img {
+    padding: 11px;
+  }
+  img:hover {
+    transition: .5s;
+    filter: invert(100);
+  }
+  hr {
+    width: 95%;
+    border: 0.5px solid rgba(0, 0, 0, 0.234);
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+  h3 {
+    margin-bottom: 5px;
+    margin-left: 8px;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+  .containerBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button {
+      font-weight: 700;
+      width: 70px;
+      margin: 2px 1px;
+      border-radius: 15px;
+      background: transparent;
+      color: rgb(255, 255, 255);
+      border: 2px solid #fff;
+    }
+    button:hover {
+      color: rgb(0, 0, 0);
+      background: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+}
